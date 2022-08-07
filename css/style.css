@@ -1,3 +1,5 @@
+
+
 *{
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -15,9 +17,10 @@ p{
 }
 
 span{
-    background: -webkit-linear-gradient(#E70FAA, #00C0FD);
+    color: #4586b5;
+    /* background: -webkit-linear-gradient(#E70FAA, #00C0FD);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     font-weight: bold;
 }
 body::-webkit-scrollbar{
@@ -30,7 +33,7 @@ body::-webkit-scrollbar{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
 }
 
@@ -70,7 +73,7 @@ nav ul{
 }
 .navbar-brand{
     float: left;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     padding: 10px;
     background: -webkit-linear-gradient(#E70FAA, #00C0FD);
     -webkit-background-clip: text;
@@ -84,6 +87,7 @@ nav a:hover{
     background: -webkit-linear-gradient(#E70FAA, #00C0FD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 
 /* akhir navbar */
@@ -103,10 +107,18 @@ nav a:hover{
     align-items: center; */
 }
 
+.pattern{
+    position: absolute;
+    z-index: -2;
+    background-size: cover;
+    width: 915px;
+    height: 501px;
+    margin-left: 80vh;
+
+}
+
 .image img{
-    border-radius: 50% ;
     text-align: center;
-    border: solid;
     float:right;
     /* margin-right: 230px; */
 
@@ -155,10 +167,15 @@ nav a:hover{
 .hire{
     text-align: left;
     border: 20px;
-    width: 1100px;
-    height: 450px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    border-radius: 20px;
+    margin-left: 40%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 650px;
+    height: 300px;
+    padding: 20px 30px 20px 30px;
 
 }
 
@@ -312,6 +329,8 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 
 .tech img{
@@ -319,6 +338,16 @@ nav a:hover{
     height: 100px;
     padding: 35px;
     text-align: center;
+}
+
+.stack{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 25px;
 }
 
 /* checkbox darkmod */
@@ -368,16 +397,6 @@ nav a:hover{
     transform: translate(29px, -50%);
 }
 
-
-table{
-    width: 100%;
-    color: black;
-    border-collapse: collapse;
-}
-td,th{
-    border: 2px;
-    padding: 8px;
-}
 .footer{
     display: flex;
     flex-direction: row;
