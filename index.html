@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/281f2c458e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="script" href="main.js">
+    <script src="main.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
@@ -18,43 +18,76 @@
     <nav>
         <div class="Navbar">
             <a href="#" class="navbar-brand">Gilang Aditya Purnama Sidhi</a>
-            <ul id="list-nav">
-                <li class="nav-item"><a href="index.html">Service</a></li>
-                <li class="nav-item"><a href="#aboutme">About Me</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
-                <li class="nav-item"><a href="#project">Project</a></li>
-                <li class="nav-item"><a href="404page.html">Blog</a></li>
-            </ul>
-            <!-- <label for="checkbox" class="toggler">
-                <input type="checkbox" id="checkbox">
-                <span class="ball">
-                    <i class="fa-solid fa-brightness"></i>
-                    <i class="fa-solid fa-moon"></i>
-                </span>
-            </label> -->
+                <ul id="list-nav">
+                    <li class="nav-item">
+                        <i class="fa-solid fa-house-user nav_icon active_link"></i>
+                        <a class="nav_name active_link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-user nav_icon"></i>
+                        <a class="nav_name " href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-book-bookmark nav_icon"></i>
+                        <a class="nav_name" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-address-book nav_icon"></i>
+                        <a class="nav_name" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-brands fa-blogger nav_icon"></i>
+                        <a class="nav_name" href="404page.html">Blog</a>
+                    </li>
+                </ul>
+                <div class="toggle-mood">
+                     <label for="checkbox" class="toggler">
+                        <input type="checkbox" id="checkbox">
+                        <span class="ball">
+                            <i class="fa-solid fa-brightness"></i>
+                            <i class="fa-solid fa-moon"></i>
+                        </span>
+                    </label>
+                </div>
         </div>
     </nav>
     <!-- akhir navbar -->
     <div class="container-fluid">
         <!-- profile -->
         <header>
+            <div class="toggle">
+                <label for="checkbox" class="toggler">
+                   <input type="checkbox" id="checkbox">
+                   <span class="ball">
+                       <i class="fa-solid fa-brightness"></i>
+                       <i class="fa-solid fa-moon"></i>
+                   </span>
+               </label>
+           </div>
             <div class="image" >
-                <img class="pattern" src="img/pattern.png" alt="pattern">
-                <img data-aos="fade-left"
-                     data-aos-duration="1500"
-                     data-aos-offset="300" id="myImage" src="img/foto2.png" alt="my photos" width="500" height="400">
-                <div class="myname" 
-                    data-aos="fade-right"
-                    data-aos-offset="300" 
-                    data-aos-duration="1500" >Hi everyone 👋 <br> My name is <span>Gilang Aditya Purnama Sidhi.<br></span>Also know as <span>Gilang.</span><br>I'm Front End Dev & React Enthusiast</div>
-                    
+                <img class="pattern" src="img/pattern3.png" alt="pattern">
+                    <img class="polygon" src="img/polygon2.png" alt="pattern">
+                    <img data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-offset="300" id="myImage" src="img/foto2.png" alt="my photos" width="300" height="300">
             </div>
-        </header>
+            <div class="myname" 
+                data-aos="fade-right"
+                data-aos-offset="300" 
+                data-aos-duration="1500" >
+                    <h4>Hi everyone 👋 </h4>
+                    <p>My name is <span>Gilang Aditya Purnama Sidhi. </span></p>
+                    <p>I'm UI/UX & Front-End Developer</p>
+                    <p class="desc">Also know as <span>Gilang Gondrong </span></p>
+                    <a href="contact.html" data-aos="flip-up" 
+                        data-aos-duration="1000" data-aos-delay="900" class="btn-talk">Let's Talk</a>
+            </div>
+    </header>
         <!-- akhir profile -->
-        <section class="content">
+    <section class="content">
             <!-- section about me -->
-            <div class="aboutme" id="aboutme" >
-                <h2>About <span>Me</span></h2>
+        <div class="aboutme" id="aboutme" >
+            <h2>About <span>Me</span></h2>
                 <img data-aos="zoom-in"  
                         data-aos-duration="1000" class="photos-about" src="img/icon3.PNG" alt="photos aboutme" width="250" height="250">
                 <div class="hire">
@@ -66,85 +99,85 @@
                     </p>
                     
                 </div>
-                <a href="404page.html" data-aos="flip-up" 
+                <div class="btn-about">
+                    <a href="404page.html" data-aos="flip-up" 
                             data-aos-duration="1000" data-aos-delay="900" class="btn-hire">Hire Me</a>
                     <a href="404page.html" data-aos="flip-up" 
                     data-aos-duration="1000" data-aos-delay="1100" class="btn-cv">Download CV</a>
-            </div>
-            <!-- akhir section about me -->
+                </div>
+        </div>
+        <!-- akhir section about me -->
 
             <!-- section card project -->
-            <div class="sect-card" id="project">
-                <div class="title-project">
-                    <h2>My <span>Project</span></h2>
+        <div class="sect-card" id="project">
+            <div class="title-project">
+                <h2>My <span>Project</span></h2>
                     <p>Things I’ve built so far</p>
-                </div>
-                    
+            </div>     
                 <div class="card">
                     <div class="card-body" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="100">
                         <div class="card-img">
                             <img src="img/MVC.png" alt="keyboard">
                         </div>
-                        <div class="card-tile">
-                            <p class="title-card">CRUD MVC data warga</p>
-                            <p>this is a college assignment project using mvc c#</p>
-                            <p>Tech stack : HTML , Javascript, Bootstrap, C#</p>
-                        </div>
-                        <div class="card-footer">
-                            <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
-                            <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
-                        </div>
+                            <div class="card-tile">
+                                <p class="title-card">CRUD MVC data warga</p>
+                                <p>this is a college assignment project using mvc c#</p>
+                                <p>Tech stack : HTML , Javascript, Bootstrap, C#</p>
+                            </div>
+                                <div class="card-footer">
+                                    <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
+                                    <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
+                                </div>
                     </div>
                     <div class="card-body" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
                         <div class="card-img">
                             <img src="img/beasiswa.png" alt="keyboard">
                         </div>
-                        <div class="card-tile">
-                            <p class="title-card">Website Beasiswa</p>
-                            <p>This is website beasiswa for student in universitas Insan Pembangunan Bitung</p>
-                            <p>Tech stack : HTML , JavaScript, Bootstrap, PHP</p>
-                        </div>
-                        <div class="card-footer">
-                            <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
-                            <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
-                        </div>
+                            <div class="card-tile">
+                                <p class="title-card">Website Beasiswa</p>
+                                <p>This is website beasiswa for student in universitas Insan Pembangunan Bitung</p>
+                                <p>Tech stack : HTML , JavaScript, Bootstrap, PHP</p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
+                                <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
+                            </div>
                     </div>
                     <div class="card-body" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-img">
                             <img src="img/project1.png" alt="keyboard">
                         </div>
-                        <div class="card-tile">
-                            <p class="title-card">Project Tile goes here</p>
-                            <p>This is sample project description random</p>
-                            <p>Tech stack : HTML , JavaScript, SASS, React</p>
-                        </div>
-                        <div class="card-footer">
-                            <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
-                            <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
-                        </div>
+                            <div class="card-tile">
+                                <p class="title-card">Calculator App</p>
+                                <p>project is under construction</p>
+                                <p>Tech stack : netBeans</p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
+                                <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
+                            </div>
                     </div>
                     <div class="card-body" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="400">
                         <div class="card-img">
-                            <img src="img/keyboard4.jpg" alt="keyboard">
+                            <img src="img/project1.png" alt="keyboard">
                         </div>
-                        <div class="card-tile">
-                            <p class="title-card">Project Tile goes here</p>
-                            <p>This is sample project description random</p>
-                            <p>Tech stack : HTML , JavaScript, SASS, React</p>
-                        </div>
-                        <div class="card-footer">
-                            <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
-                            <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
-                        </div>
+                            <div class="card-tile">
+                                <p class="title-card">Simple TODO List App</p>
+                                <p>project is under construction</p>
+                                <p>Tech stack : HTML , CSS, JavaScript </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-brands fa-github fa-lg"><a href="404page.html">View Code</a></i>
+                                <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
+                            </div>
                     </div>
-                    <div class="view-more" id="viewMore">
-                        <button class="btnView">👇View More</button>
+                        <div class="view-more" id="viewMore">
+                            <button class="btnView">👇View More</button>
                     </div>
                 </div>
                 <!-- akhir section card project -->
             </div>
-            
-        </section>
+    </section>
         <div class="mySkill">
             <h2>My <span>Tech Stack</span></h2>
             <p> Technologies I’ve been working with recently</p>
@@ -173,7 +206,7 @@
     </div>
     <footer class="footer">
         <ul id="footer-list">
-            <li><a href="index.html">Service</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="#blog">Blog</a></li>

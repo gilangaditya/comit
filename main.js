@@ -1,37 +1,23 @@
-'import index.html';
+// active link
+const sections = document.querySelectorAll('section[id]');
 
+function scrollActive(){
+    const scrollY = window.pageYOffset;
 
-var namaDepan;
-var namaBelakang;
+    sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight,
+        sectionToP = current.offsetTop - 50,
+        sectionId = current.getAttribute('id');
 
-namaDepan='Gilang Aditya';
-namaBelakang='Purnama Sidhi';
+        if(scrollY > sectionToP && scrollY <= sectionToP + sectionHeight){
+            document.querySelector('list-nav a[href*=' + sectionId +']')
+            .classList.add('active_link');
 
-console.log(namaDepan);
- 
-var a;
-var b;
+        }else{
+            document.querySelector('list-nav a[href*=' + sectionId +']')
+            .classList.remove('active_link');
+        }
+    })
+}
 
-a = 10;
-b = 10;
-x = a*b;
-
-console.log(x);
-
-var a = ['mobil', 'motor', 'bajaj'];
-
-console.log(a[2]);
-
-var email;
-var password;
- email= 'gilang@gmail.com';
- password= '1234';
- if(email == 'gilang@gmail' && password == '1234'){
-     alert('login sukses');
- }else if(password == '1234'){
-     alert('email salah');
- }else if(email == 'gilang@gmail'){
-     alert('password salah');
- }else{
-     alert('login gagal');
- }
+window.addEventListener('scroll', scrollActive);
