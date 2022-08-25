@@ -135,3 +135,41 @@ footer{
 hr{
     background-color: #ffffff;
 }
+
+@media only screen and (max-width : 476px){
+    .container-fluid{
+        width: 110%;
+        padding: 20px;
+    }
+
+    .container{
+        display: flex;
+        width: 100%;
+    }
+
+    .list-nav{
+        padding: 0;
+    }
+
+    .icon{
+        padding-top: 50px;
+    }
+
+    .form-contact{
+        margin: 10px;
+    }
+
+    .icon-contact{
+        justify-content: space-between;
+        margin: 5px;
+    }
+
+    .input{
+        width: 100%;
+    }
+
+    footer{
+        width: 110%;
+        padding: 20px;
+    }
+}

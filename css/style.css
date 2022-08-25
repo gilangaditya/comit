@@ -108,7 +108,10 @@ i.nav_icon{
 }
 
 .container-fluid{
-    padding: 50px 150px 0px 150px;
+    width: 93%;
+    margin: 0;
+    padding: 77px 50px 50px 60px;
+    min-height: 100vh;
 }
 
 .toggle{
@@ -144,7 +147,7 @@ i.nav_icon{
 }
 
 .image img{
-    text-align: center;
+    padding-right: 48px;
     float:right;
 
 }
@@ -481,7 +484,7 @@ footer a:hover{
     color: #49B1FD;
 }
 
-@media only screen and (min-width : 768px){
+@media only screen and (min-width : 760px){
     .active_link::before{
         content: '';
         position: absolute;
@@ -498,7 +501,7 @@ footer a:hover{
     }
 }
 
-@media only screen and ( max-width : 768px) {
+@media only screen and ( max-width : 760px) {
     
     .navbar-brand{
         display: none;
@@ -507,7 +510,7 @@ footer a:hover{
 
     nav{
         position: fixed;
-        bottom: 35px;
+        bottom: 0;
         left: 0;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         backdrop-filter: blur(10px);
@@ -518,7 +521,7 @@ footer a:hover{
         display: grid;
         justify-content: center;
         align-items: center;
-        border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+        border-radius: 1.25rem 1.25rem 0 0;
         transition: .4s;
 
     }
@@ -533,13 +536,18 @@ footer a:hover{
 
     .container-fluid{
         width: auto;
-        min-height: 200px;
+        padding: 50px;
 
     }
 
-    img .polygon{
+    .myImage img{
+        position: relative;
+    }
+
+    .polygon{
         display: block;
         align-items: center;
+        margin-left: auto;
 
     }
 
@@ -559,6 +567,15 @@ footer a:hover{
 
     .hire{
         display: table-cell;
+        width: 210px;
+
+    }
+
+    .btn-hire{
+        
+    }
+
+    .btn-cv{
 
     }
 
@@ -599,9 +616,135 @@ footer a:hover{
     }
 }
 
-@media  screen and (min-width : 576px) {
-    .list-nav{
+@media only screen and ( max-width : 476px){
+    .container-fluid{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0 0 0 0 ;
+    }
+
+    nav{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .toggle{
+        padding-top: 20px;
+    }
+
+    .image img{
+        padding: 0 73px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .image{
+        margin-top: 10px;
+    }
+
+    .myname{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        padding: 13px;
+        text-align: center;
+    }
+
+    .myname p {
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    .myname h4{
+        font-size: 22px;
+    }
+
+    .myname .desc{
+        font-size: 15px;
+    }
+
+    .btn-talk{
+        padding: 8px 20px;
+    }
+
+    .aboutme{
+        width: 100%;
+        justify-items: center;
+        display: grid;
+        grid-row: auto;
+    }
+
+    .photos-about{
+        display: none;
+    }
+
+    .hire{
+        width: 355px;
+        height: 300px;
+        margin: 0;
+    }
+
+    .btn-hire{
+        padding: 12px 20px;
+    }
+
+    .btn-cv{
+        padding: 12px 20px;
+    }
+
+    .card{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
+        text-align: center;
+    }
+
+    .card-body{
+        width: 45%;
+    }
+
+    .title-card {
+        font-size: 16px;
+    }
+
+    .card-footer{
+        font-size: 10px;
+    }
+
+    .tech{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .tech img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .mySkill{
+        margin-bottom: 100px;
+    }
+
+    .footer{
+        align-content: flex-end;
+        margin: 0;
+        padding-bottom: 80px;
+
+    }
+
+    .footer ul{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .footer p{
+        padding: 10px;
+        font-size: 12px;
     }
 }
 /* akhir navbar */
