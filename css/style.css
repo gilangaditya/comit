@@ -510,8 +510,6 @@ footer a:hover{
 
     nav{
         position: fixed;
-        bottom: 0;
-        left: 0;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(7px);
@@ -627,15 +625,17 @@ footer a:hover{
     nav{
         position: fixed;
         bottom: 0;
-        width: 100%;
+        width: 388px;
+        height: 70px;
     }
 
     .toggle{
         padding-top: 20px;
+        margin-left: 300px;
     }
 
     .image img{
-        padding: 0 73px;
+        padding: 30px;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -646,9 +646,11 @@ footer a:hover{
 
     .myname{
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 100px;
         padding: 13px;
         text-align: center;
+        width: 365px;
+        height: 350px;
     }
 
     .myname p {
@@ -663,9 +665,16 @@ footer a:hover{
     .myname .desc{
         font-size: 15px;
     }
+    
+    .btnView{
+        margin: 0;
+    }
+
+
 
     .btn-talk{
         padding: 8px 20px;
+        margin: 0;
     }
 
     .aboutme{
@@ -680,9 +689,13 @@ footer a:hover{
     }
 
     .hire{
-        width: 355px;
-        height: 300px;
+        width: 310px;
+        height: 310px;
         margin: 0;
+    }
+
+    .hire p{
+        font-size: 16px;
     }
 
     .btn-hire{
@@ -703,11 +716,11 @@ footer a:hover{
     }
 
     .card-body{
-        width: 45%;
+        width: 43%;
     }
 
     .title-card {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .card-footer{
