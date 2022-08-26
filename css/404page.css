@@ -47,3 +47,19 @@ section img{
     color: #ffffff;
     transition: 0.6s;
 }
+
+@media only screen and (max-width : 476px ){
+    section img{
+        width: 400px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    section p{
+        font-size: 1.25rem;
+    }
+
+    .btn-back{
+        margin: 0;
+    }
+}

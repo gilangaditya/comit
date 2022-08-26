@@ -449,6 +449,22 @@ i.nav_icon{
     transform: translate(29px, -50%);
 }
 
+.beta{
+    border-radius: 10px;
+    margin-top: 35px;
+    height: 30px;
+    padding: 0;
+    border: #3d3d3d solid 2px;
+    background-color: #3d3d3d;
+}
+
+.alert-beta{
+    margin: 0;
+    padding: 3px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
 .footer{
     display: flex;
     flex-direction: row;
@@ -748,6 +764,21 @@ footer a:hover{
         margin: 0;
         padding-bottom: 80px;
 
+    }
+
+    .beta{
+        border-radius: 10px;
+        margin-top: 10px;
+        height: 37px;
+        padding: 0;
+        border: #3d3d3d solid 2px;
+        background-color: #3d3d3d;
+    }
+
+    .alert-beta{
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
     }
 
     .footer ul{
