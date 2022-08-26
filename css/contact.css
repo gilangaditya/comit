@@ -159,6 +159,11 @@ hr{
         margin: 10px;
     }
 
+    .link_contact{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
     .icon-contact{
         justify-content: space-between;
         margin: 5px;
@@ -175,5 +180,10 @@ hr{
     footer{
         width: 100%;
         padding: 20px 0 20px 0;
+    }
+
+    footer p{
+        padding: 10px;
+        font-size: 12px;
     }
 }
