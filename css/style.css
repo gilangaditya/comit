@@ -37,7 +37,7 @@ body::-webkit-scrollbar{
 nav{
     align-items: center;
     text-align: justify;
-    z-index: 1000;
+    z-index: 1;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(7px);
@@ -110,8 +110,8 @@ i.nav_icon{
 .container-fluid{
     width: 93%;
     margin: 0;
-    padding: 77px 50px 50px 60px;
-    min-height: 100vh;
+    padding: 77px 50px 50px 50px;
+    min-height: 200px;
 }
 
 .toggle{
@@ -317,6 +317,7 @@ i.nav_icon{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: flex-start;
 }
 
@@ -524,6 +525,10 @@ footer a:hover{
         
     }
 
+    .container-fluid{
+        display: block;
+    }
+
     nav{
         position: fixed;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -631,17 +636,21 @@ footer a:hover{
 }
 
 @media screen and ( max-width : 476px){
+    
     .container-fluid{
       width: 100%;
+      display: inline-block;
+      max-width: fit-content;
       height: auto;
       margin: 0;
       padding: 0 0 0 0 ;
     }
 
     nav{
+
         position: fixed;
         bottom: 0;
-        width: 100%;
+        width: 90%;
         height: 70px;
     }
 
@@ -660,12 +669,17 @@ footer a:hover{
         margin-top: 10px;
     }
 
+    .myImage{
+        display: block;
+        position: relative;
+    }
+
     .myname{
         margin-top: 30px;
         margin-bottom: 100px;
         padding: 13px;
         text-align: center;
-        width: 388px;
+        width: 90%;
         height: 350px;
     }
 
@@ -694,10 +708,14 @@ footer a:hover{
     }
 
     .aboutme{
-        width: 100%;
+        width: 95%;
         justify-items: center;
         display: grid;
         grid-row: auto;
+    }
+
+    .sect-card{
+        width: 95%;
     }
 
     .photos-about{
@@ -705,8 +723,8 @@ footer a:hover{
     }
 
     .hire{
-        width: 310px;
-        height: 310px;
+        width: 260px;
+        height: 320px;
         margin: 0;
     }
 
@@ -744,6 +762,7 @@ footer a:hover{
     }
 
     .tech{
+        width: 92%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -761,7 +780,7 @@ footer a:hover{
 
     .footer{
         align-content: flex-end;
-        margin: 0;
+        margin: 0 20px 0 0;
         padding-bottom: 80px;
 
     }
