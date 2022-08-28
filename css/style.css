@@ -635,7 +635,7 @@ footer a:hover{
     }
 }
 
-@media screen and ( max-width : 476px){
+@media screen and ( max-width : 415px){
     
     .container-fluid{
       width: 100%;
