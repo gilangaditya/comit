@@ -111,12 +111,48 @@ i.nav_icon{
 .container-fluid{
     width: 93%;
     margin: 0;
-    padding: 77px 50px 50px 50px;
+    padding: 60px 50px 50px 50px;
     min-height: 200px;
 }
 
 .toggle{
     display: none;
+}
+
+.hi{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 199px;
+}
+
+.icon-hand{
+    transform-origin: right bottom;
+    animation: move 0.4s ease-in-out infinite alternate;
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(-0deg);
+    }
+
+    25%{
+        transform: rotate(10deg);
+    }
+
+    50%{
+        transform: rotate(10deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(-10deg);
+    }
 }
 
 .image{
@@ -138,6 +174,7 @@ i.nav_icon{
 }
 
 .polygon{
+    display: none;
     position: absolute;
     z-index: -1;
     width: 264px;
@@ -691,6 +728,12 @@ footer a:hover{
         font-size: 15px;
     }
 
+    .hi{
+        width: 295px;
+        justify-content: center;
+        padding-right: 0;
+    }
+
     .myname h4{
         font-size: 22px;
     }
@@ -731,7 +774,7 @@ footer a:hover{
 
     .hire{
         width: 260px;
-        height: 320px;
+        height: 350px;
         margin: 0;
     }
 
@@ -741,6 +784,7 @@ footer a:hover{
 
     .btn-hire{
         padding: 12px 20px;
+        margin-right: 15px;
     }
 
     .btn-cv{
