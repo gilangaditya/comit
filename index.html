@@ -171,6 +171,34 @@
                                 <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
                             </div>
                     </div>
+                    <div class="card-body" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-img">
+                            <img src="img/Agen Bus Malam Sinar jaya.png" alt="keyboard">
+                        </div>
+                            <div class="card-tile">
+                                <p class="title-card">Booking Bus Ticket</p>
+                                <p>This is my final assignment in college, namely web-based online bus ticket booking</p>
+                                <p>Tech stack : Bootstrap v5.2, JavaScript, jQuery, Laravel 9, Blade </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-brands fa-github fa-lg"><a href="https://github.com/gilangaditya/Agen-bus">Code</a></i>
+                                <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
+                            </div>
+                    </div>
+                    <div class="card-body" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-img">
+                            <img src="img/project1.png" alt="keyboard">
+                        </div>
+                            <div class="card-tile">
+                                <p class="title-card">Management App</p>
+                                <p>This is my friend's final project that I have worked on, namely management for factory production</p>
+                                <p>Tech stack : Bootstrap v5.2, JavaScript, jQuery, Laravel 9, Blade </p>
+                            </div>
+                            <div class="card-footer">
+                                <i class="fa-brands fa-github fa-lg"><a href="https://github.com/gilangaditya/Agen-bus">Code</a></i>
+                                <i class="fa-solid fa-link fa-lg"><a href="404page.html">Demo</a></i>
+                            </div>
+                    </div>
                 </div>
                 <!-- akhir section card project -->
             </div>
@@ -205,14 +233,63 @@
         <div class="beta">
             <p class="alert-beta">Beta v1.0</p>
         </div>
-        <ul id="footer-list">
+        <ul class="list-item" id="footer-list">
             <li><a href="#">Home</a></li>
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="#blog">Blog</a></li>
         </ul>
-        <p>Created with <span class="love-coffe">Love & Cofee</span> by <span class="name-footer">Gilang Aditya Purnama Sidhi</span></p>  
+        <p>Build with full vanilla css, Javascript</p>
+        <p>Created with <span class="love-coffe">❤</span> by <span class="name-footer">Gilang Aditya Purnama Sidhi</span></p>  
     </footer>
+
+    <!-- toogle darkmode -->
+    <script>
+        const checkbox = document.getElementById("checkbox");
+
+        checkbox.addEventListener("change", () => {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+
+    <script>
+        // Mendapatkan status mode gelap dari localStorage
+        const darkMode = localStorage.getItem('darkMode');
+
+        // Jika mode gelap diaktifkan pada localStorage, tambahkan kelas 'dark' pada elemen body
+        if (darkMode === 'enabled') {
+        document.body.classList.add('dark');
+        } else {
+        document.body.classList.remove('dark');
+        }
+
+        // Mendapatkan elemen toggle ball
+        const toggleBall = document.querySelector('.ball');
+
+        // Menentukan posisi awal toggle ball sesuai dengan status mode gelap
+        if (darkMode === 'enabled') {
+        toggleBall.style.left = '15px'; // jika mode gelap diaktifkan, toggle ball harus di sebelah kanan
+        } else {
+        toggleBall.style.left = '1px'; // jika mode gelap tidak diaktifkan, toggle ball harus di sebelah kiri
+        }
+
+        // Menangani perubahan toggle switch
+        const toggleSwitch = document.querySelector('#checkbox');
+
+        toggleSwitch.addEventListener('change', () => {
+        // Jika toggle switch diaktifkan, tambahkan kelas 'dark' pada elemen body dan simpan preferensi pengguna di localStorage
+        if (toggleSwitch.checked) {
+            document.body.classList.add('dark');
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            // Jika toggle switch dimatikan, hapus kelas 'dark' dari elemen body dan hapus preferensi pengguna dari localStorage
+            document.body.classList.remove('dark');
+            localStorage.setItem('darkMode', null);
+        }
+        });
+    </script>
+
+    <script></script>
    
     <!-- AOS Animation -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

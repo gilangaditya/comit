@@ -472,7 +472,7 @@ i.nav_icon{
     border-radius: 50%;
     left: 1px;
     z-index: 10;
-    transition: transform (0.5 ease-in-out);
+    transition: transform 0.5s ease-in-out;
 
 }
 
@@ -487,6 +487,50 @@ i.nav_icon{
 #checkbox:checked + .ball{
     transform: translate(29px, -50%);
 }
+
+.dark {
+    background-color: #1c1c1e;
+    color: #fff;
+}
+
+body {
+    transition: background-color 0.5s ease;
+  }
+  
+
+.dark .toggler {
+    transform: translateX(26px);
+}
+
+.dark .ball {
+    background-color: #fff;
+}
+
+.dark .nav_name{
+    color: #fff;
+}
+
+.dark p{
+    color: #fff;
+}
+
+.dark .card-body p{
+    color: #1c1c1e;
+}
+
+.dark .card-footer a{
+    color: #1c1c1e;
+}
+
+.dark .beta{
+    background-color: #4672fe;
+    border: #4672fe solid ;
+}
+
+.dark .footer a{
+    color: #fff;
+}
+
 
 .beta{
     border-radius: 10px;
