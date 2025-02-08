@@ -69,7 +69,7 @@ nav li{
     list-style-type: none;
 }
 nav ul{
-    justify-content: flex-end;
+    justify-content: center;
     text-align: center;
 }
 .navbar-brand{
@@ -97,6 +97,7 @@ i.nav_icon{
 #list-nav{
     display: flex;
     align-items: center;
+    padding-left: 0px;
 }
 
 .nav-item{
@@ -673,6 +674,16 @@ footer a:hover{
         position: absolute;
         background-color: #1f1f1f;
     }
+
+    #list_nav{
+        margin-left: 0px !important;
+        padding-left: 0px;
+    }
+
+    .nav ul{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
@@ -691,8 +702,8 @@ footer a:hover{
         
     }
 
-    .container-fluid{
-        display: block;
+    .container-fluid {
+        width: 95%; /* Lebar lebih kecil untuk perangkat kecil */
     }
 
     nav{
@@ -703,6 +714,7 @@ footer a:hover{
         width: 100%;
         height: 4rem;
         padding: 0;
+        margin: 0px;
         display: grid;
         justify-content: center;
         align-items: center;
@@ -812,6 +824,10 @@ footer a:hover{
       padding: 0 0 0 0 ;
     }
 
+    .cta-hire{
+        display: none;
+    }
+
     nav{
 
         position: fixed;
@@ -885,8 +901,17 @@ footer a:hover{
     .aboutme{
         width: 100%;
         justify-items: center;
-        display: grid;
-        grid-row: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+     
+    }
+
+    .title-head-aboutme{
+        width: 100%;
     }
 
     .stack{
