@@ -886,6 +886,7 @@ footer a:hover{
     .hi{
         justify-content: center;
         padding-right: 0;
+        width: 100%;
     }
 
     .myname h4{
