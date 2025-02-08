@@ -828,6 +828,10 @@ footer a:hover{
         display: none;
     }
 
+    .Navbar{
+        justify-content: center;
+    }
+
     nav{
 
         position: fixed;
@@ -843,10 +847,16 @@ footer a:hover{
     }
 
     .image img{
-        padding: 42px;
         text-align: center;
         margin-bottom: 10px;
     }
+
+    .hero{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+
     .polygon{
         display: none;
     }
@@ -861,11 +871,11 @@ footer a:hover{
 
     .myname{
         margin-top: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         padding: 13px;
         text-align: center;
         width: 94%;
-        height: 350px;
+        height: 200px;
     }
 
     .myname p {
@@ -874,7 +884,6 @@ footer a:hover{
     }
 
     .hi{
-        width: 295px;
         justify-content: center;
         padding-right: 0;
     }
@@ -907,6 +916,7 @@ footer a:hover{
         align-items: center;
         text-align: center;
         justify-content: center;
+        margin-bottom: 30px;
      
     }
 
@@ -985,8 +995,7 @@ footer a:hover{
 
     footer{
         align-content: flex-end;
-        margin: 250px 0px 250px 0px;
-        padding-bottom: 80px;
+        margin: 250px 0px 100px 0px;
     }
 
     .beta{
